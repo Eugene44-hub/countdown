@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: hsl(235, 16%, 14%); */
+    /* background-color: hsl(234, 17%, 12%); */
+    background-image: url('images/pattern-hills.svg'), linear-gradient( hsl(235, 18%, 12%), hsl(236, 21%, 26%));
+    background-position: ;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: ;
+}
+
+
+/* timer color  hsl(345, 95%, 68%) 
+timer card color hsl(237, 18%, 59%)
+* /

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: hsl(235, 16%, 14%); */
+    /* background-color: hsl(234, 17%, 12%); */
+    background-image: url('images/pattern-hills.svg'), url('images/bg-stars.svg'), linear-gradient( hsl(235, 18%, 12%), hsl(236, 21%, 26%));
+    background-position: bottom, top;
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: 'Red Hat Text';
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.col10 {
+    flex: 100%;
+    margin: auto;
+}
+
+h4 {
+    color: white;
+    padding: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h6 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 15px;
+    color: hsl(237, 18%, 59%);
+    letter-spacing: 4px;
+}
+
+.timer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.card {
+    background-color: hsl(236, 21%, 26%);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px rgb(29, 27, 27);
+    border-radius: 7px;
+    display: flex;
+}
+
+p {
+    font-size: 50px;
+    color: hsl(345, 95%, 68%);
+    margin: auto;
+}
+
+.circle {
+    border-width: 4px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    height: 1px;
+    position: absolute;
+    left: -4px;
+    top: 47%;
+}
+
+.circle2 {
+    left: 96px;
+}
+
+hr {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0%;
+    border-color: rgb(158, 158, 158);
+    opacity: 0.2;
+}
+
+@media screen and (max-width:720px) {
+    .timer {
+        max-width: 350px;
+    }
+}
+
+
+/* timer color  hsl(345, 95%, 68%) 
+timer card color hsl(237, 18%, 59%)
+* /

@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: hsl(235, 16%, 14%); */
+    /* background-color: hsl(234, 17%, 12%); */
+    background-image: url('images/pattern-hills.svg'), url('images/bg-stars.svg'), linear-gradient( hsl(235, 18%, 12%), hsl(236, 21%, 26%));
+    background-position: bottom, top;
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+h3 {
+    margin: auto;
+}
+
+
+/* timer color  hsl(345, 95%, 68%) 
+timer card color hsl(237, 18%, 59%)
+* /

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: hsl(235, 16%, 14%); */
+    /* background-color: hsl(234, 17%, 12%); */
+    background-image: url('images/pattern-hills.svg'), url('images/bg-stars.svg'), linear-gradient( hsl(235, 18%, 12%), hsl(236, 21%, 26%));
+    background-position: bottom, top;
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.col10 {
+    flex: 100%;
+    margin: auto;
+}
+
+h3 {
+    color: white;
+    padding: 50px;
+}
+
+.timer {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: hsl(237, 18%, 59%);
+    margin: auto;
+    position: relative;
+    flex: 20;
+}
+
+hr {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 98%;
+    overflow: hidden;
+}
+
+
+/* timer color  hsl(345, 95%, 68%) 
+timer card color hsl(237, 18%, 59%)
+* /
