@@ -11,7 +11,7 @@ setInterval(e => {
     const proArr = [proposed.getHours(), proposed.getMinutes(), proposed.getSeconds(), proposed.getDay(), proposed.getMonth()];
     let daysTo, hoursTo, minutesTo, secondsTo;
 
-    daysTo = (((proArr[4] * 31) - 7) + proposed.getDate()) - (((current.getMonth() * 31) - 5) + current.getDate());
+    daysTo = (((proArr.at(4) * 31) - 7) + proposed.getDate()) - (((current.getMonth() * 31) - 5) + current.getDate());
     hoursTo = (24 - current.getHours());
     minutesTo = (60 - current.getMinutes());
     secondsTo = (60 - current.getSeconds());
