@@ -150,6 +150,33 @@
             background-size: auto;
         }
     }
-    /* timer color  hsl(345, 95%, 68%) 
+    
+    @media screen and (max-width: 375px) {
+        .timer {
+            width: 100%;
+        }
+        body {
+            background-size: auto;
+        }
+        .card {
+            height: 70px;
+            width: 70px;
+        }
+        p {
+            font-size: 30px;
+        }
+        .circle2 {
+            left: 65px;
+        }
+        h6 {
+            font-size: 9px;
+        }
+        footer {
+            bottom: 0;
+        }
+    }
+    /* timer color  hsl(345 95%, 68%) 
+timer card color hsl(237, 18%, 59%)
+* / /* timer color  hsl(345, 95%, 68%) 
 timer card color hsl(237, 18%, 59%)
 * /
