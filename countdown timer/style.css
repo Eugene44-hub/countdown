@@ -153,7 +153,9 @@
     
     @media screen and (max-width: 375px) {
         .timer {
-            width: 100%;
+            padding: 0;
+            flex: 100%;
+            justify-content: space-around;
         }
         body {
             background-size: auto;
@@ -161,6 +163,7 @@
         .card {
             height: 70px;
             width: 70px;
+            margin: 5px
         }
         p {
             font-size: 30px;
@@ -169,10 +172,13 @@
             left: 65px;
         }
         h6 {
-            font-size: 9px;
+            font-size: 7px;
         }
         footer {
-            bottom: 0;
+            bottom: -20px;
+        }
+        .container {
+            justify-content: center;
         }
     }
     /* timer color  hsl(345 95%, 68%) 
