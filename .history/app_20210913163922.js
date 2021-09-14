@@ -28,31 +28,18 @@ const box = document.querySelector('.box')
 const toggle = document.querySelector('.toggle');
 toggle.addEventListener('click', e => {
     if (toggle.style.left == '-6px') {
-        let query = window.matchMedia('(min-width:720px)');
         const measurement = document.querySelectorAll('h6');
         let header = document.querySelector('#timeheader');
         toggle.style.left = '50px'
         box.style.backgroundColor = 'white';
         document.body.style.backgroundImage = " url('images/snow-clipart-620123-ields-covered-with-snow-under-a-b-Stock-Vector.jpg')";
         document.body.style.backgroundRepeat = 'no-repeat';
-
+        document.body.style.backgroundSize = 'cover'
         document.body.style.transition = 'all .5s'
         header.style.color = 'black';
         for (let i = 0; i < measurement.length; i++) {
             measurement[i].style.color = 'black';
         }
-
-        function qfunc(x) {
-            if (x.matches) {
-                document.body.style.backgroundSize = 'cover';
-
-            } else {
-                document.body.style.backgroundSize = 'auto';
-            }
-        }
-
-        qfunc(query);
-        query.addListener(qfunc)
 
     } else {
         const measurement = document.querySelectorAll('h6');
@@ -84,7 +71,8 @@ toggle.addEventListener('click', e => {
 })
 
 
-
+qfunc(query);
+query.addListener(qfunc)
 
 
 //calculation starts

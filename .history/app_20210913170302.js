@@ -35,7 +35,7 @@ toggle.addEventListener('click', e => {
         box.style.backgroundColor = 'white';
         document.body.style.backgroundImage = " url('images/snow-clipart-620123-ields-covered-with-snow-under-a-b-Stock-Vector.jpg')";
         document.body.style.backgroundRepeat = 'no-repeat';
-
+        document.body.style.backgroundSize = 'cover'
         document.body.style.transition = 'all .5s'
         header.style.color = 'black';
         for (let i = 0; i < measurement.length; i++) {
@@ -44,7 +44,7 @@ toggle.addEventListener('click', e => {
 
         function qfunc(x) {
             if (x.matches) {
-                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundSize = 'contain';
 
             } else {
                 document.body.style.backgroundSize = 'auto';
